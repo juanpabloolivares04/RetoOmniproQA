@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f30e7be-836c-424b-9355-f02547645298" name="Changes" comment="configuracion de plantillas y creacion de clases del page">
-      <change afterPath="$PROJECT_DIR$/serenity.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/omnipro/steps/searchBarSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/definitions/searchBarDefinitions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/runners/searchBarRunning.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/searchBarProduct.feature" afterDir="false" />
+    <list default="true" id="2f30e7be-836c-424b-9355-f02547645298" name="Changes" comment="creacion de primer caso de prueba y configuracion del build gradle">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/omnipro/pages/changeLocationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/omnipro/pages/changeLocationPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/omnipro/pages/searchBarPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/omnipro/pages/searchBarPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/omnipro/steps/searchBarSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/omnipro/steps/searchBarSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/definitions/searchBarDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/definitions/searchBarDefinitions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/searchBarProduct.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/searchBarProduct.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,13 +76,18 @@
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
-      <command value="gradle clean" />
       <command value="gradle aggregate" />
+      <command value="gradle test" />
+      <command value="gradle: aggregate" />
+      <command value="gradle -clean" />
+      <command value="gradle clean" />
       <command value="gradle testAggregateTestReport" />
+      <command value="gradlew clean" />
+      <command value="gradlew :testAggregateTestReport" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.RetoOmniproQA [testAggregateTestReport]">
-    <configuration name="RetoOmniproQA [aggregate]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.searchBarRunning">
+    <configuration name="RetoOmniproQA [:testAggregateTestReport]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -97,28 +98,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="aggregate" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="RetoOmniproQA [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="clean" />
+            <option value=":testAggregateTestReport" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -189,13 +169,36 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="searchBarRunning" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;runners.searchBarRunning&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.searchBarRunning" />
+        <item itemvalue="Gradle.RetoOmniproQA [:testAggregateTestReport]" />
+        <item itemvalue="Gradle.RetoOmniproQA [testAggregateTestReport]" />
         <item itemvalue="Gradle.RetoOmniproQA" />
         <item itemvalue="Gradle.RetoOmniproQA [test]" />
-        <item itemvalue="Gradle.RetoOmniproQA [aggregate]" />
-        <item itemvalue="Gradle.RetoOmniproQA [testAggregateTestReport]" />
-        <item itemvalue="Gradle.RetoOmniproQA [clean]" />
       </list>
     </recent_temporary>
   </component>
@@ -207,7 +210,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1689388664340</updated>
-      <workItem from="1689388667117" duration="24685000" />
+      <workItem from="1689388667117" duration="32855000" />
     </task>
     <task id="LOCAL-00001" summary="configuracion de plantillas y creacion de clases del page">
       <created>1689393087732</created>
@@ -216,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689393087732</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="creacion de primer caso de prueba y configuracion del build gradle">
+      <created>1689473626378</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1689473626378</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,6 +262,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="configuracion de plantillas y creacion de clases del page" />
-    <option name="LAST_COMMIT_MESSAGE" value="configuracion de plantillas y creacion de clases del page" />
+    <MESSAGE value="creacion de primer caso de prueba y configuracion del build gradle" />
+    <option name="LAST_COMMIT_MESSAGE" value="creacion de primer caso de prueba y configuracion del build gradle" />
   </component>
 </project>

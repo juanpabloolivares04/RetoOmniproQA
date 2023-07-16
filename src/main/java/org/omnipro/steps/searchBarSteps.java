@@ -12,4 +12,22 @@ public class searchBarSteps {
         objsearchBar.open();
         objsearchBar.maxScreen();
     }
+
+    @Step
+    public void searchProduct(String product){
+        objsearchBar.searchProduct(product);
+
+    }
+
+    @Step
+        public void searchPrice()  {
+        objsearchBar.searchLowerPrice();
+
+    }
+    @Step
+    public void validationPrice()  {
+        objsearchBar.catchLowPrice();
+
+    }
+
 }
