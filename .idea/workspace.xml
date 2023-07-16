@@ -4,12 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f30e7be-836c-424b-9355-f02547645298" name="Changes" comment="creacion de primer caso de prueba y configuracion del build gradle">
+    <list default="true" id="2f30e7be-836c-424b-9355-f02547645298" name="Changes" comment="se realiza primer caso exitoso">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/omnipro/steps/changeLocationSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/omnipro/steps/searchMethodsSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/definitions/changeLocationDefinitions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/definitions/searchPaymentMethodDefinitions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/runners/changeLocationRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/runners/searchPaymentRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/searchPayments.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/omnipro/pages/changeLocationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/omnipro/pages/changeLocationPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/omnipro/pages/searchBarPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/omnipro/pages/searchBarPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/omnipro/steps/searchBarSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/omnipro/steps/searchBarSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/definitions/searchBarDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/definitions/searchBarDefinitions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/searchBarProduct.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/searchBarProduct.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/omnipro/pages/searchPaymentMethodsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/omnipro/pages/searchPaymentMethodsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/changeLocation.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/changeLocation.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +72,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/Users/juanp/IdeaProjects/RetoOmniproQA",
     "nodejs_package_manager_path": "npm"
@@ -72,6 +81,9 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\juanp\IdeaProjects\RetoOmniproQA" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="runners" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -86,7 +98,26 @@
       <command value="gradlew :testAggregateTestReport" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.searchBarRunning">
+  <component name="RunManager" selected="Gradle.searchPaymentRunner">
+    <configuration name="Feature: changeLocation" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/changeLocation.feature" />
+      <option name="GLUE" value="net.serenitybdd.cucumber.actors" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="RetoOmniproQA.test" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome" />
+      <option name="SUGGESTED_NAME" value="Feature: changeLocation" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RetoOmniproQA [:testAggregateTestReport]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -108,7 +139,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="RetoOmniproQA [testAggregateTestReport]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="changeLocationPage" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -119,52 +150,14 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="testAggregateTestReport" />
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;runners.changeLocationPage&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="RetoOmniproQA [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="RetoOmniproQA" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="-clean" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list />
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
@@ -192,13 +185,36 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="searchPaymentRunner" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;runners.searchPaymentRunner&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.searchPaymentRunner" />
+        <item itemvalue="Gradle.changeLocationPage" />
+        <item itemvalue="Cucumber Java.Feature: changeLocation" />
         <item itemvalue="Gradle.searchBarRunning" />
         <item itemvalue="Gradle.RetoOmniproQA [:testAggregateTestReport]" />
-        <item itemvalue="Gradle.RetoOmniproQA [testAggregateTestReport]" />
-        <item itemvalue="Gradle.RetoOmniproQA" />
-        <item itemvalue="Gradle.RetoOmniproQA [test]" />
       </list>
     </recent_temporary>
   </component>
@@ -210,7 +226,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1689388664340</updated>
-      <workItem from="1689388667117" duration="32855000" />
+      <workItem from="1689388667117" duration="45180000" />
     </task>
     <task id="LOCAL-00001" summary="configuracion de plantillas y creacion de clases del page">
       <created>1689393087732</created>
@@ -226,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689473626378</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="se realiza primer caso exitoso">
+      <created>1689481869142</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1689481869142</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,6 +286,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="configuracion de plantillas y creacion de clases del page" />
     <MESSAGE value="creacion de primer caso de prueba y configuracion del build gradle" />
-    <option name="LAST_COMMIT_MESSAGE" value="creacion de primer caso de prueba y configuracion del build gradle" />
+    <MESSAGE value="se realiza primer caso exitoso" />
+    <option name="LAST_COMMIT_MESSAGE" value="se realiza primer caso exitoso" />
   </component>
 </project>
