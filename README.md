@@ -12,5 +12,9 @@ Tecnologias Usadas
 
 Casos de prueba evaluados.
 
+*Caso1 = Validar el correcto funcionamiento de la barra de busqueda encontrando el menor valor del producto
+*Caso2= Validar el cambio de locacion de recibir los productos
+*Caso3= Validar los medios de pago disponibles
+*Caso4= Validar los costos de publicacion de inmuebles
+*Caso5= Validar la visualizacion de ofertas de la pagina
 
-Para ejecutar los casos ejecutar el .bat 
